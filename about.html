@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about First Class Concrete, Cleveland Tennessee's premier concrete contractor.">
+  <title>About Us | First Class Concrete</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    .page-header {
+      padding: 150px 0 80px;
+      text-align: center;
+      background: linear-gradient(135deg, var(--color-bg-darker) 0%, var(--color-bg-card) 100%);
+      border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    }
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .about-content { grid-template-columns: 1fr; }
+    }
+    .about-text h2 { margin-bottom: 20px; font-size: 2.5rem; }
+    .about-text p { margin-bottom: 15px; font-size: 1.1rem; color: var(--color-text-muted); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo-text">
+        <img src="images/logo.jpg" alt="First Class Concrete Logo" onerror="this.style.display='none'">
+        <span>First Class Concrete</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="text-gold">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1 class="text-gold">About Us</h1>
+      <p>Precision Poured. Quality Assured.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Your Trusted Concrete Partner in <span class="text-gold">Cleveland, TN</span></h2>
+          <p>At First Class Concrete, we don't just pour concrete; we build lasting foundations for our community. With years of experience in both residential and commercial projects, we have established ourselves as the premier concrete contractor in Cleveland, Tennessee.</p>
+          <p>Our motto, <strong>"Precision Poured. Quality Assured."</strong> is more than just words—it's a commitment to excellence. From the initial consultation to the final finish, our dedicated team ensures every project meets our rigorous standards.</p>
+          <p>Whether you're looking for a simple sidewalk repair or a complex decorative patio, we bring the same level of professionalism, high-quality materials, and attention to detail to every job.</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Get Your Free Estimate</a>
+        </div>
+        <div class="about-image" style="border-radius: 8px; overflow: hidden; border: 2px solid rgba(197, 160, 89, 0.2);">
+          <img src="images/image-patio2.jpeg" alt="Our Team Pouring Concrete" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='400px';">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="text-gold">First Class Concrete</h3>
+          <p>Precision Poured. Quality Assured.</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Cleveland, Tennessee</p>
+          <p>Phone: (571) 568-0269</p>
+          <p>Email: <a href="mailto:firstclassconcretetn@gmail.com" class="text-gold">firstclassconcretetn@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

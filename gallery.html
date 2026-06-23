@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View our gallery of concrete projects in Cleveland, TN including driveways, patios, and foundations.">
+  <title>Projects Gallery | First Class Concrete</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    .page-header {
+      padding: 150px 0 80px;
+      text-align: center;
+      background: linear-gradient(135deg, var(--color-bg-darker) 0%, var(--color-bg-card) 100%);
+      border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    }
+    .filter-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: transparent;
+      border: 1px solid var(--color-text-muted);
+      color: var(--color-text-muted);
+      padding: 8px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: var(--font-heading);
+    }
+    .filter-btn.active, .filter-btn:hover {
+      border-color: var(--color-gold);
+      color: var(--color-gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo-text">
+        <img src="images/logo.jpg" alt="First Class Concrete Logo" onerror="this.style.display='none'">
+        <span>First Class Concrete</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html" class="text-gold">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:5715680269" class="btn btn-outline" style="display: none;">Call Now</a>
+      <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1 class="text-gold">Our Projects Gallery</h1>
+      <p>Precision Poured. Quality Assured.</p>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      <div class="gallery-filters" style="text-align: center; margin-bottom: 30px;">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="patio">Patios & Porches</button>
+        <button class="filter-btn" data-filter="driveway">Driveways & Walkways</button>
+        <button class="filter-btn" data-filter="steps">Steps</button>
+        <button class="filter-btn" data-filter="slabs">Slabs</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Patios -->
+        <div class="gallery-item" data-category="patio"><img src="images/image-patio1.jpeg" alt="Patio Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        <div class="gallery-item" data-category="patio"><img src="images/image-patio2.jpeg" alt="Patio Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        <div class="gallery-item" data-category="patio"><img src="images/image-patio3.jpeg" alt="Patio Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        <div class="gallery-item" data-category="patio"><img src="images/image-patio4.jpeg" alt="Patio Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        <div class="gallery-item" data-category="patio"><img src="images/image-patio5.jpeg" alt="Patio Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        
+        <!-- Driveways -->
+        <div class="gallery-item" data-category="driveway"><img src="images/image-driveway1.jpeg" alt="Driveway Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        <div class="gallery-item" data-category="driveway"><img src="images/image-driveway2.jpeg" alt="Driveway Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        <div class="gallery-item" data-category="driveway"><img src="images/image-driveway3.jpeg" alt="Driveway Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        <div class="gallery-item" data-category="driveway"><img src="images/image-driveway4.jpeg" alt="Driveway Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        
+        <!-- Steps -->
+        <div class="gallery-item" data-category="steps"><img src="images/image-steps1.jpeg" alt="Steps Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        <div class="gallery-item" data-category="steps"><img src="images/image-steps2.jpeg" alt="Steps Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        <div class="gallery-item" data-category="steps"><img src="images/image-steps3.jpeg" alt="Steps Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+
+        <!-- Slabs -->
+        <div class="gallery-item" data-category="slabs"><img src="images/image-slabs1.jpeg" alt="Slabs Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+        <div class="gallery-item" data-category="slabs"><img src="images/image-slabs2.jpeg" alt="Slabs Project" onerror="this.style.backgroundColor='#333'; this.style.display='block'; this.style.minHeight='250px';"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="text-gold">First Class Concrete</h3>
+          <p>Precision Poured. Quality Assured.</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Cleveland, Tennessee</p>
+          <p>Phone: (571) 568-0269</p>
+          <p>Email: <a href="mailto:firstclassconcretetn@gmail.com" class="text-gold">firstclassconcretetn@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Gallery Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
